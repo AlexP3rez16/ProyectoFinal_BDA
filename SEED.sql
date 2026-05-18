@@ -354,8 +354,7 @@ FROM (VALUES
     (1, 'Bienestar', 38000.00, '2024-03-01'),
     (2, 'Premium',   55000.00, '2024-01-15'),
     (3, 'Esencial',  22500.00, '2024-06-01'),
-    (4, 'Bienestar', 38000.00, '2024-09-01'),
-    (5, 'Premium',   55000.00, '2023-11-01')
+    (4, 'Bienestar', 38000.00, '2024-09-01')
 ) AS t(id_res, tipo, monto, fini)
 WHERE NOT EXISTS (
     SELECT 1 FROM plan_residente pr
