@@ -184,7 +184,7 @@ GRANT ALL PRIVILEGES ON DATABASE asilo_db TO equipo5proyfin;
 
 ### 5. Ejecutar scripts SQL en orden
 
-```powershell
+```
 export PGPASSWORD="123"
 PSQL="psql"
 
@@ -195,7 +195,8 @@ $PSQL -U equipo5proyfin -d asilo_db -f familiar_ddl.sql
 $PSQL -U postgres -d asilo_db -f PROCEDURES.sql
 $PSQL -U postgres -d asilo_db -f familiar_procedures.sql
 $PSQL -U postgres -d asilo_db -f VIEWS_TRIGGERS.sql
-$PSQL -U equipo5proyfin -d asilo_db -f SEED.sql```
+$PSQL -U equipo5proyfin -d asilo_db -f SEED.sql
+```
 
 > Los archivos `PROCEDURES.sql`, `familiar_procedures.sql` y `VIEWS_TRIGGERS.sql` requieren el superusuario `postgres` para crear funciones con `SECURITY DEFINER`.
 >
